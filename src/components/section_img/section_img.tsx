@@ -30,19 +30,19 @@ export function Img() {
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 py-4">
           Guido Palacin <br />
         </motion.p> 
-        <h1 className="font-bold text-xl md:text-4x1 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 py-4s">Especialistas en Defensa Penal</h1>
-        <button className="w-54 px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+        <h1 className="font-bold text-xl md:text-4x1 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 py-4s">Defensa penal estratégica para particulares y empresas.</h1>
+        <button className="w-54 px-4 py-2 backdrop-blur-sm border bg-[#C8A977]/10 border-[#C8A977]/20 text-white mx-auto text-center rounded-full relative mt-4">
           <span>
             <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2"
             >
-            WhatsApp 
+            Solicitar consulta 
             <FaWhatsapp fontSize='20px'/>
             </a>
             </span>
-          <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+          <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-golden-500 to-transparent" />
         </button>
       </motion.div>
     </ImagesSlider>
