@@ -7,11 +7,11 @@ import style from '../../styles/home.module.css'
 import { FaWhatsapp, FaRegBuilding, FaHammer   } from "react-icons/fa";
 import { MdWorkOutline, MdPeopleAlt, MdOutlinePeopleAlt } from "react-icons/md";
 import { TbCash } from "react-icons/tb";
-
 import { FiMessageCircle } from "react-icons/fi";
-
+import { CgArrowTopRight } from "react-icons/cg";
 
 import { BsCheckLg } from "react-icons/bs";
+import { Link } from "react-router-dom"
 
 
 
@@ -85,16 +85,26 @@ export function DesingHome() {
             </div>
              </section>
 
-        {/*AÑOS, MATRICULA*/} {/*TEXTO MINI PRESENTACION*/}
-        <section>
-             <div className="max-w-5xl mx-auto px-8">
-                 <div className={style.section}> 
-            <p> 
-                Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
+             <div className={style.section}> 
+
+              <article className={style.article}>
+                <p className={style.section_p}>SOBRE MI</p>
+               <h3 className={style.section_h3}>Construido sobre la integridad, impulsado por la justicia.</h3>
+              </article>
+
+              <article className={style.article_dos}> 
+                <p className={style.section_p_dos}> 
                 Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
                 Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
             </p>
+            <Link to="/" className={style.link}>Mas sobre mi  </Link>
+              </article>
             </div>
+
+
+        {/*AÑOS, MATRICULA*/} {/*TEXTO MINI PRESENTACION*/}
+        <section>
+            <div className="max-w-5xl mx-auto px-8">
              <HoverEffect items={projects} />
              </div>
         </section>

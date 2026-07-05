@@ -4,13 +4,21 @@ ROUTER YPAGES
 */
 
 import { DesingHome } from './pages/home/home'
+import { BrowserRouter, Routes, Route, Link } from 'react-router';
 
 
 function App() {
 
   return (
     <>
-    <DesingHome />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DesingHome />} />
+       {/*  <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />*/}
+      </Routes>
+      </BrowserRouter>
+
     </>
   )
 }
