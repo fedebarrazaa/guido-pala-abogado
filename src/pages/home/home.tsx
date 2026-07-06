@@ -2,6 +2,7 @@ import { Header } from "@/components/header/header"
 import { Img } from '../../components/section_img/section_img'
 import { HoverEffect } from '../../components/ui/card-hover-effect'
 import { InfiniteMovingCards } from '../../components/ui/infinite-moving-cards'
+import  TestCarousel  from '../../components/motion-primitives/component.carousel'
 import { DesingArea } from '../../components/areas/areas'
 import style from '../../styles/home.module.css'
 
@@ -116,10 +117,12 @@ export function DesingHome() {
         </section>
 {/*QUE TRABAJA*/}
         <section className={style.section_areas_desing}> 
+          <article className={style.article_section_areas}> 
             <h1> 
                 AREAS DE PRACTICA
             </h1>
-            <DesingArea />
+          </article>
+             <TestCarousel />
         </section>
 {/*PORQUE ELEGIRME*/}
 
