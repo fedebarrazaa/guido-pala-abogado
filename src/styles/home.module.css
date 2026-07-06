@@ -96,14 +96,15 @@
     padding: 5px;
     width: 100%;
     min-height: 300px;
+    background-color: #D2B48C;
 }
 @media (min-width: 1200px) {
     .section_areas_desing {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start; /* 👈 el fix: saca el stretch por default */
     }
-    
 }
 
 .section_areas_desing h1 {
@@ -119,16 +120,19 @@
     font-weight: bolder;
     color: #222730;
 }
-
+.article_section_areas{
+    background-color: blue;
+}
 @media (min-width: 1200px) {
     .article_section_areas {
-        width: 20%;
+        width: 30%;
         display: flex;
         flex-direction: column;
+        align-items: flex-start; /* opcional, si querés el h1 pegado a la izquierda */
         gap: 30px;
-    
+        background-color: red;
+        justify-content: center;
     }
-    
 }
 
 /*PORQUE ELEGIRME*/
