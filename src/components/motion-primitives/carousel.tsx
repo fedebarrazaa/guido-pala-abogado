@@ -71,7 +71,9 @@ function CarouselProvider({
       {children}
     </CarouselContext.Provider>
   );
+  
 }
+
 
 export type CarouselProps = {
   children: ReactNode;
@@ -80,6 +82,10 @@ export type CarouselProps = {
   index?: number;
   onIndexChange?: (newIndex: number) => void;
   disableDrag?: boolean;
+
+  autoplay?: boolean;
+  autoplayInterval?: number;
+  loop?: boolean;
 };
 
 function Carousel({
@@ -89,17 +95,52 @@ function Carousel({
   index: externalIndex,
   onIndexChange,
   disableDrag = false,
+  autoplay = false,
+  autoplayInterval = 4000,
+  loop = true,
 }: CarouselProps) {
-  const [internalIndex, setInternalIndex] = useState<number>(initialIndex);
+  const [internalIndex, setInternalIndex] = useState(initialIndex);
+
   const isControlled = externalIndex !== undefined;
   const currentIndex = isControlled ? externalIndex : internalIndex;
+
+  const itemsLength = Children.count(children);
 
   const handleIndexChange = (newIndex: number) => {
     if (!isControlled) {
       setInternalIndex(newIndex);
     }
+
     onIndexChange?.(newIndex);
   };
+
+  // ✅ AUTOPLAY
+  useEffect(() => {
+    if (!autoplay || itemsLength === 0) return;
+
+    const interval = setInterval(() => {
+      let next = currentIndex + 1;
+
+      if (next >= itemsLength) {
+        if (loop) {
+          next = 0;
+        } else {
+          clearInterval(interval);
+          return;
+        }
+      }
+
+      handleIndexChange(next);
+    }, autoplayInterval);
+
+    return () => clearInterval(interval);
+  }, [
+    autoplay,
+    autoplayInterval,
+    currentIndex,
+    itemsLength,
+    loop,
+  ]);
 
   return (
     <CarouselProvider
@@ -107,8 +148,10 @@ function Carousel({
       onIndexChange={handleIndexChange}
       disableDrag={disableDrag}
     >
-      <div className={cn('group/hover relative', className)}>
-        <div className='overflow-hidden'>{children}</div>
+      <div className={cn("group/hover relative", className)}>
+        <div className="overflow-hidden">
+          {children}
+        </div>
       </div>
     </CarouselProvider>
   );

@@ -43,34 +43,28 @@ export function DesingHome() {
 
     const testimonials = [ 
         {
-            quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "-Charles Dickens",
-    title: "A Tale of Two Cities",
+            quote:"Guido me acompañó durante todo el proceso con mucha claridad y profesionalismo. Siempre respondió mis dudas y logró resolver mi caso de la mejor manera. Lo recomiendo totalmente.",
+            name: "María Fernández",
         },
         {
-            quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "-Federico Barraza",
-    title: "asd",
+            quote:"Destaco su compromiso y rapidez para encontrar soluciones. Me brindó un asesoramiento preciso y estuvo presente en cada etapa del proceso. Excelente profesional.",
+            name: "Javier Gómez",
         },
         {
-            quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "-Federico Barraza",
-    title: "asd",
+            quote: "Necesitaba asesoramiento legal para mi emprendimiento y Guido superó mis expectativas. Explica cada detalle de forma sencilla y transmite mucha confianza.",
+            name: "Carolina Rivas",
         },
         {
-            quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "-Federico Barraza",
-    title: "asd",
+            quote:"Desde la primera consulta me sentí escuchado. Su trato humano y su conocimiento jurídico hicieron que afrontara una situación compleja con mucha tranquilidad.",
+            name: "Sergio Álvarez",
         },
         {
-            quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "-Federico Barraza",
-    title: "asd",
+            quote:"Agradezco la dedicación y la transparencia con la que manejó mi caso. Siempre estuvo disponible para responder consultas y el resultado fue excelente.",
+            name: "Lucía Martínez",
+        },
+        {
+            quote:"Profesional, responsable y muy atento. Me explicó todas las alternativas antes de tomar una decisión y eso me dio mucha seguridad durante el proceso.",
+            name: "Federico López",
         }
     ]
 
@@ -118,36 +112,42 @@ export function DesingHome() {
 {/*QUE TRABAJA*/}
         <section className={style.section_areas_desing}> 
           <article className={style.article_section_areas}> 
-            <h1> 
-                AREAS DE PRACTICA
-            </h1>
+            <p className={style.section_p_article}>AREAS DE PRACTICA</p>
+            <h3 className={style.section_h3_article}>Experiencia de confianza</h3>
           </article>
-             <TestCarousel />
+          <article className={style.article_section_areas_dos}> 
+            <TestCarousel />
+          </article>
+             
         </section>
 {/*PORQUE ELEGIRME*/}
-
-        <section className={style.section_areas}> 
-            <h1> 
-                ¿Por qué elegirme?
-            </h1>
-            <ul className={style.ul}>
-                {data.map((usuario)=>(
-                   <li>{usuario.icon}{usuario.text}</li> 
-
-                ))} 
-            </ul>
-        </section>
+<section className={style.section_elegir}>
+    <article className={style.article_elegir_izq}>
+        <p className={style.section_elegir_p}>¿POR QUÉ ELEGIRME?</p>
+    </article>
+    <article className={style.article_elegir_der}>
+        <ul className={style.ul}>
+            {data.map((usuario, index) => (
+                <li key={index}>
+                    {usuario.icon}
+                    <span>{usuario.text}</span>
+                </li>
+            ))}
+        </ul>
+    </article>
+</section>
 
          {/* TESTIMONIOS*/}
-         <section> 
-            <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
-         </section>
+         <section className={style.desing_testimonios}> 
+    <article className={style.testimonios_izq}>
+        <p className={style.desing_testimonios_p}>TESTIMONIOS</p>
+    </article>
+    <article className={style.testimonios_der}>
+        <div className="w-full h-[25rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            <InfiniteMovingCards items={testimonials} direction="right" speed="slow"/>
+        </div>
+    </article>
+</section>
         
         {/*NECESITAS*/}
         <section className={style.section_contact}> 
