@@ -3,17 +3,14 @@ import { Img } from '../../components/section_img/section_img'
 import { HoverEffect } from '../../components/ui/card-hover-effect'
 import { InfiniteMovingCards } from '../../components/ui/infinite-moving-cards'
 import  TestCarousel  from '../../components/motion-primitives/component.carousel'
+import { FooterDesing } from '../../components/footer/footer'
 import { DesingArea } from '../../components/areas/areas'
 import style from '../../styles/home.module.css'
-
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import { TbCash } from "react-icons/tb";
 import { FiMessageCircle } from "react-icons/fi";
-
 import { Link } from "react-router-dom"
-
-
 
 
 export function DesingHome() {
@@ -67,27 +64,11 @@ export function DesingHome() {
             name: "Federico López",
         }
     ]
-
-    const paginas = [
-      {id:1, nombre: 'Inicio'},
-      {id:2, nombre: 'Sobre mi'},
-      {id:3, nombre: 'Areas'},
-      {id:4, nombre: 'Contacto'},
-    ]
-
-    const redes = [
-      {id:1, nombre: 'Linkedin'},
-      {id:2, nombre: 'Instagram'},
-    ]
-
     return (
         <> 
 {/*HEADER + IMAGEN + BOTON WPP*/}
-        <section className="relative"> 
+        <section className="relative -mt-24"> 
          <Img />
-          <div className="absolute inset-x-4 top-4 z-[60] md:inset-x-8 md:top-3"> 
-           <Header />
-            </div>
              </section>
 {/*TEXTO MINI PRESENTACION*/}
              <div className={style.section}> 
@@ -148,7 +129,6 @@ export function DesingHome() {
         </div>
     </article>
 </section>
-        
         {/*NECESITAS*/}
         <section className={style.section_contact}> 
           <article className={style.article_contact}>
@@ -168,39 +148,6 @@ export function DesingHome() {
             </span>
         </button>
         </section>
-
-        <footer className={style.footer}> 
-          <div className={style.footer_nombre}> 
-            <p>Guido Palacin</p>
-          </div>
-          <article className={style.article_footer}> 
-          <div className={style.footer_paginas}> 
-            <p>Paginas</p>
-            <ul> 
-              {paginas.map(usuario => (
-                <li key={usuario.id}> 
-                 {usuario.nombre}
-              </li>
-              ))}
-              
-            </ul>
-          </div>
-          <div className={style.footer_sociales}> 
-            <p>Sociales</p>
-            <ul> 
-              {redes.map(usuario => (
-                <li key={usuario.id}> 
-                 {usuario.nombre}
-              </li>
-              ))}
-              
-            </ul>
-          </div>
-          </article>
-
-        </footer>
-
-        
         </>
     )
 }

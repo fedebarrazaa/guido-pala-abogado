@@ -3,6 +3,7 @@ import { Navbar, NavBody, NavItems, MobileNav, NavbarLogo, NavbarButton,  Mobile
 from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { FaInstagram, FaLinkedin  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -10,19 +11,19 @@ export function Header() {
   const navItems = [
     {
       name: "Inicio",
-      link: "#features",
+      link: "/",
     },
     {
       name: "Sobre mi",
-      link: "#pricing",
+      link: "/sobre-mi",
     },
     {
       name: "Areas",
-      link: "#contact",
+      link: "/areas",
     },
     {
       name: "Contacto",
-      link: "#contact",
+      link: "/contacto",
     },
   ];
 
