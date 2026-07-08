@@ -81,7 +81,7 @@ export function DesingHome() {
                 Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
                 Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
             </p>
-            <Link to="/" className={style.link}>Mas sobre mi  </Link>
+            <Link to="/sobre-mi" className={style.link}>Mas sobre mi  </Link>
               </article>
             </div>
 {/*AÑOS, MATRICULA*/} 
