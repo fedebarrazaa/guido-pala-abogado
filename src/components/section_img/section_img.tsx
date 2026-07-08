@@ -1,18 +1,20 @@
 import { motion } from "motion/react";
 import {ImagesSlider} from '../ui/images-slider'
 import { FaWhatsapp} from "react-icons/fa";
+import imgPerfil from '../../assets/foto-perfil.png'
 
 const images = [
-    "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imgPerfil
   ]
 
 export function Img() {
    const WHATSAPP_NUMBER = "5491133169842"; // sin + ni espacios
     const message = encodeURIComponent("Hola, quiero hacer una consulta legal");
+    
     return (
         <>
         <section> 
-             <ImagesSlider className="h-[40rem]" images={images}>
+             <ImagesSlider className="h-[40rem] " images={images} >
       <motion.div
         initial={{
           opacity: 0,
@@ -25,7 +27,7 @@ export function Img() {
         transition={{
           duration: 0.6,
         }}
-        className="z-50 flex flex-col justify-center items-center"
+        className="z-50 flex flex-col justify-center items-center "
       >
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 py-4">
           Guido Palacin <br />
