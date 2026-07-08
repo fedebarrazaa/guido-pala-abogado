@@ -15,7 +15,7 @@
       gap: 30px;
     }
 }
-article{ 
+.section_textos_article { 
     width: 80%;
 }
 .section_p {
@@ -48,10 +48,55 @@ article{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-weight: 300;
 }
 
 @media (min-width: 1200px) {
     .section_textos_box {
        width: 80%;
+    }
+}
+
+/*-------------*/
+.section_cita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+}
+@media (min-width: 1200px) {
+    .section_cita{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+    }
+}
+
+.section_cita_h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.section_cita_p {
+    color: #D2B48C;
+    font-weight: bolder;
+}
+.section_cita div {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (min-width: 1200px) {
+    .section_cita div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 80%;
     }
 }

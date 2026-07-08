@@ -46,11 +46,10 @@ export function DesingSobreMi(){
       </section>
 
       <section className={style.section_textos}>
-        <article> 
+        <article className={style.section_textos_article}> 
           <p className={style.section_p}>SOBRE MI</p>
         <h1 className={style.section_h1}>Un compromiso con la defensa de tus derechos</h1>  
         </article>
-        
         <div className={style.section_textos_box}>  
             {textos.map((texto) => (
             <p key={texto.id}> 
@@ -58,9 +57,15 @@ export function DesingSobreMi(){
             </p>
         ))}
         </div>
-        
         <HoverEffect items={projects} />
+      </section>
 
+      <section className={style.section_cita}> 
+        <div>
+            <h3 className={style.section_cita_h3}> "La confianza se construye con resultados y una comunicación transparente."</h3>
+        <p className={style.section_cita_p}>- Guido Palacin</p>
+        </div>
+        
       </section>
         </>
     )
