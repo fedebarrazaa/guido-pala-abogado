@@ -20,7 +20,7 @@ export default function TestCarousel() {
       Derecho Civil
     </h3>
 
-    <p className="max-w-md text-[#B7BCC5] leading-relaxed text-center">
+    <p className="max-w-md text-black leading-relaxed text-center">
       Asesoramiento integral en contratos, sucesiones, daños y perjuicios,
       buscando siempre soluciones eficientes y personalizadas para cada cliente.
     </p>
@@ -35,7 +35,7 @@ export default function TestCarousel() {
       Jurisdicción
     </h3>
 
-    <p className="max-w-md text-[#B7BCC5] leading-relaxed text-center">
+    <p className="max-w-md text-black leading-relaxed text-center">
      Intervención en C.A.B.A., Provincia de Buenos Aires, Santa Cruz y Rio Negro (matricula provincial). Delitos federales en todo el país.
     </p>
 
@@ -49,7 +49,7 @@ export default function TestCarousel() {
      Representación
     </h3>
 
-    <p className="max-w-md text-[#B7BCC5] leading-relaxed text-center">
+    <p className="max-w-md text-black leading-relaxed text-center">
       Intervención en todas las etapas del proceso penal: investigación e instrucción, juicio oral, etapas recursivas, tribunales superiores provinciales y Corte Suprema de Justicia.
     </p>
 

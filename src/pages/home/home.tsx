@@ -1,10 +1,8 @@
-import { Header } from "@/components/header/header"
 import { Img } from '../../components/section_img/section_img'
 import { HoverEffect } from '../../components/ui/card-hover-effect'
 import { InfiniteMovingCards } from '../../components/ui/infinite-moving-cards'
 import  TestCarousel  from '../../components/motion-primitives/component.carousel'
-import { FooterDesing } from '../../components/footer/footer'
-import { DesingArea } from '../../components/areas/areas'
+
 import style from '../../styles/home.module.css'
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlinePeopleAlt } from "react-icons/md";
@@ -124,7 +122,7 @@ export function DesingHome() {
         <p className={style.desing_testimonios_p}>TESTIMONIOS</p>
     </article>
     <article className={style.testimonios_der}>
-        <div className="w-full h-[25rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="w-full h-[25rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
             <InfiniteMovingCards items={testimonials} direction="right" speed="slow"/>
         </div>
     </article>

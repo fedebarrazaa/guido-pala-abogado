@@ -1,54 +1,98 @@
 import { motion } from "motion/react";
-import {ImagesSlider} from '../ui/images-slider'
-import { FaWhatsapp} from "react-icons/fa";
-import imgPerfil from '../../assets/foto-perfil.png'
+import { ImagesSlider } from "../ui/images-slider";
+import { FaWhatsapp } from "react-icons/fa";
+import imgPerfil from "../../assets/foto-perfil.png";
 
-const images = [
-    imgPerfil
-  ]
+const images = [imgPerfil];
 
 export function Img() {
-   const WHATSAPP_NUMBER = "5491133169842"; // sin + ni espacios
-    const message = encodeURIComponent("Hola, quiero hacer una consulta legal");
-    
-    return (
-        <>
-        <section> 
-             <ImagesSlider className="h-[40rem] " images={images} >
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: -80,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.6,
-        }}
-        className="z-50 flex flex-col justify-center items-center "
+  const WHATSAPP_NUMBER = "5491133169842";
+  const message = encodeURIComponent(
+    "Hola, quiero hacer una consulta legal"
+  );
+
+  return (
+    <section>
+      <ImagesSlider
+  className="h-[50rem] w-full"
+        images={images}
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 py-4">
-          Guido Palacin <br />
-        </motion.p> 
-        <h1 className="font-bold text-xl md:text-4x1 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-300 py-4s">Defensa penal estratégica para particulares y empresas.</h1>
-        <button className="w-54 px-4 py-2 backdrop-blur-sm border bg-[#C8A977]/10 border-[#C8A977]/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>
-            <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2"
+        <motion.div
+          initial={{
+            opacity: 0,
+            x: -50,
+          }}
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+          className="
+            z-50
+            w-full
+            max-w-7xl
+            mx-auto
+            px-8
+            lg:px-24
+            flex
+            justify-start
+          "
+        >
+          <div className="max-w-xl">
+
+            <motion.h1
+              className="
+                text-white
+                text-5xl
+                md:text-7xl
+                font-bold
+                leading-none
+              "
+              style={{ fontFamily: "Times New Roman, serif" }}
             >
-            Solicitar consulta 
-            <FaWhatsapp fontSize='20px'/>
+              Guido Palacin
+            </motion.h1>
+
+            <motion.p
+              className="
+                mt-6
+                text-white/90
+                text-xl
+                leading-relaxed
+                max-w-lg
+              "
+            >
+              Defensa penal estratégica para particulares y empresas.
+            </motion.p>
+
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex
+                items-center
+                gap-2
+                mt-10
+                rounded-full
+                bg-[#D2B48C]
+                px-8
+                py-4
+                text-white
+                font-semibold
+                transition
+                hover:bg-[#C19A6B]
+              "
+            >
+              Solicitar consulta
+              <FaWhatsapp size={20} />
             </a>
-            </span>
-          <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-golden-500 to-transparent" />
-        </button>
-      </motion.div>
-    </ImagesSlider>
-        </section>
-        </>
-    )
+
+          </div>
+        </motion.div>
+      </ImagesSlider>
+    </section>
+  );
 }
