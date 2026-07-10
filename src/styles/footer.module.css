@@ -1,16 +1,18 @@
 /*footer*/
 .footer {
-    padding: 5px;
+    background-color: #f5f1ec;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: #222730;
 }
 @media (min-width: 1200px) {
     .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: start;
+        
     }
     .article_footer {
         display: flex;
@@ -18,9 +20,23 @@
     }
 }
 
-.footer_nombre {
-    font-weight: bold;
+.titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 25px;
 }
+.texto {
+    font-size: 12px;
+    font-weight: 400;
+}
+.texto_dos { 
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    margin-top: 2px;
+}
+
+
 .article_footer  {
     display: flex;
     flex-direction: column;
@@ -31,7 +47,7 @@
         display: flex;
         flex-direction: row;
         gap: 40px;
-        width: 300px;
+        width: 500px;
     }
 }
 
@@ -62,6 +78,21 @@
 }
 @media (min-width: 1200px) {
    .footer_sociales li {
+    font-size: 15px;
+}
+}
+
+.footer_areas p {
+     font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer_areas li {
+    font-size: 13px;
+    cursor: pointer;
+}
+@media (min-width: 1200px) {
+   .footer_areas li {
     font-size: 15px;
 }
 }
