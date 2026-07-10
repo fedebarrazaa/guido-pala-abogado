@@ -123,7 +123,7 @@ export function DesingHome() {
     </article>
     <article className={style.testimonios_der}>
         <div className="w-full h-[25rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <InfiniteMovingCards items={testimonials} direction="right" speed="slow"/>
+            <InfiniteMovingCards items={testimonials} direction="right" speed="slow"/> 
         </div>
     </article>
 </section>
