@@ -1,4 +1,3 @@
-import imgPerfil from '../../assets/foto-perfil.png'
 import style from '../../styles/sobremi.module.css'
 import { HoverEffect } from '../../components/ui/card-hover-effect'
 import { Img } from '../../components/section_img/sobremi_img'

@@ -1,6 +1,6 @@
 /*footer*/
 .footer {
-    background-color: #f5f1ec;
+    background-color: #272727;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -21,19 +21,23 @@
 }
 
 .titulo {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
     font-weight: bolder;
     font-size: 25px;
+    color: rgb(255, 255, 255);
 }
 .texto {
+    font-family: "Jost", sans-serif;
     font-size: 12px;
     font-weight: 400;
+    color: #D2B48C;
 }
 .texto_dos { 
     font-size: 12px;
     font-weight: 400;
     width: 200px;
     margin-top: 2px;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -55,11 +59,15 @@
 .footer_paginas p {
     font-weight: bold;
     margin-bottom: 15px;
+    color: #D2B48C;
+    font-family: "Jost", sans-serif;
 }
 
 .footer_paginas li {
     font-size: 13px;
     cursor: pointer;
+    font-family: "Jost", sans-serif;
+    color: rgb(255, 255, 255);
 }
 @media (min-width: 1200px) {
    .footer_paginas li {
@@ -70,11 +78,15 @@
 .footer_sociales p {
     font-weight: bold;
     margin-bottom: 15px;
+    color: #D2B48C;
+    font-family: "Jost", sans-serif;
 }
 
 .footer_sociales li {
     font-size: 13px;
     cursor: pointer;
+    font-family: "Jost", sans-serif;
+    color: rgb(255, 255, 255);
 }
 @media (min-width: 1200px) {
    .footer_sociales li {
@@ -83,13 +95,17 @@
 }
 
 .footer_areas p {
-     font-weight: bold;
+    font-weight: bold;
     margin-bottom: 15px;
+    color: #D2B48C;
+    font-family: "Jost", sans-serif;
 }
 
 .footer_areas li {
     font-size: 13px;
     cursor: pointer;
+    font-family: "Jost", sans-serif;
+    color: rgb(255, 255, 255);
 }
 @media (min-width: 1200px) {
    .footer_areas li {
