@@ -50,7 +50,7 @@ export function Img() {
                 font-bold
                 leading-none
               "
-              style={{ fontFamily: "Times New Roman, serif" }}
+              style={{ fontFamily: "Playfair Display, serif" }}
             >
               Guido Palacin
             </motion.h1>
@@ -63,6 +63,7 @@ export function Img() {
                 leading-relaxed
                 max-w-lg
               "
+              style={{ fontFamily: "Jost, sans-serif" }}
             >
               Defensa penal estratégica para particulares y empresas.
             </motion.p>
@@ -85,6 +86,7 @@ export function Img() {
                 transition
                 hover:bg-[#C19A6B]
               "
+              style={{ fontFamily: "Jost, sans-serif" }}
             >
               Solicitar consulta
               <FaWhatsapp size={20} />

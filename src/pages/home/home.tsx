@@ -134,7 +134,7 @@ export function DesingHome() {
             <p>Estoy para ayudarte. Consulta tu caso sin compromiso</p>
           </article>
           <button className="w-54 px-4 py-2 backdrop-blur-sm border bg-[#C8A977]/10 border-[#C8A977]/20 text-white  text-center rounded-full relative mt-4">
-          <span>
+          <span className={style.fede}>
             <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} 
             target="_blank" 
             rel="noopener noreferrer"

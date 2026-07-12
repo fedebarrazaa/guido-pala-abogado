@@ -40,36 +40,41 @@ export function Img() {
             justify-start
           "
         >
-          <div className="max-w-xl">
+          <div className="max-w-2xl">
 
             <motion.h1
-              className="
-                text-white
-                text-5xl
-                md:text-7xl
-                font-bold
-                leading-none
-              "
-              style={{ fontFamily: "Times New Roman, serif" }}
-            >
-              Un compromiso con la defensa de tus derechos
-            </motion.h1>
+    className="
+      text-white
+      text-5xl
+      md:text-6xl
+      lg:text-5xl
+      font-semibold
+      leading-[1.05]
+      tracking-[-0.03em]
+    "
+    style={{ fontFamily: "Playfair Display, serif" }}
+  >
+    Un compromiso con la defensa de tus derechos
+  </motion.h1>
 
-            <motion.p
-              className="
-                mt-6
-                text-white/90
-                text-xl
-                leading-relaxed
-                max-w-lg
-              "
-            >
-              Soy Guido Palacin, abogado comprometido con brindar un asesoramiento juridico
-              claro, estratégico y personalizado para cada cliente. Entiendo que detras de cada 
-              consulta existe una persona, una familia o una empresa que necesita respuestas,
-              por eso trabajo con cercania, transparencia y dedicación en cada etapa del proceso.
-              
-            </motion.p>
+
+             <motion.p
+    className="
+      mt-8
+      max-w-xl
+      text-lg
+      md:text-xl
+      leading-9
+      text-neutral-200
+    "
+    style={{ fontFamily: "Jost, sans-serif" }}
+  >
+    Soy Guido Palacin, abogado comprometido con brindar un asesoramiento
+    jurídico claro, estratégico y personalizado para cada cliente. Entiendo
+    que detrás de cada consulta existe una persona, una familia o una empresa
+    que necesita respuestas, por eso trabajo con cercanía, transparencia y
+    dedicación en cada etapa del proceso.
+  </motion.p>
 
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
@@ -89,6 +94,7 @@ export function Img() {
                 transition
                 hover:bg-[#C19A6B]
               "
+              style={{ fontFamily: "Jost, sans-serif" }}
             >
               Solicitar consulta
               <FaWhatsapp size={20} />

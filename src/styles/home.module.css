@@ -33,12 +33,13 @@
     font-size: 15px;
     font-weight: bolder;
     color: #222730;
+    font-family: "Jost", sans-serif;
 }
 .section_h3 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
     margin-top: 5px;
     text-align: left;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
 }
 .section_p_dos { 
@@ -46,6 +47,7 @@
     font-size: 15px;
     font-weight: 300;
     color: #2d3138;
+    font-family: "Jost", sans-serif;
 }
 .link {
     display: inline-flex;
@@ -58,15 +60,14 @@
     padding: 5px;
     border-radius: 2em;
     text-decoration: none;
+    font-family: "Jost", sans-serif;
 }
-
 
 .article_dos {
     width: 370px;
 }
 @media (min-width: 1200px) {
     .article_dos {
-        
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -81,6 +82,9 @@
     }
     .section_h3 {
         font-size: 25px;
+    }
+    .section_p_dos {
+        font-size: 18px;
     }
 }
 
@@ -118,10 +122,11 @@
     height: 35px;
     font-size: 15px;
     font-weight: bolder;
+    font-family: "Jost", sans-serif;
     color: #222730;
 }
 .section_h3_article {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
     margin-top: 5px;
     text-align: left;
     font-weight: bold;
@@ -152,6 +157,7 @@
     width: 100%;
     height: 600px;
     background-color: #333333;
+    font-family: "Jost", sans-serif;
 }
 
 
@@ -167,6 +173,7 @@
     font-size: 15px;
     font-weight: bolder;
     color: #F5F1EC;
+    
 }
 
 .ul {
@@ -177,7 +184,6 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #ffffff;
 }
@@ -190,6 +196,7 @@
     padding: 20px;
     width: 350px; 
     max-width: 100%;
+    font-family: "Playfair Display", serif;
 }
 
 
@@ -241,6 +248,7 @@
     padding: 5px;
     width: 100%;
     background-color: #F5F1EC;
+    font-family: "Jost", sans-serif;
 }
 
 .desing_testimonios_p { 
@@ -314,12 +322,16 @@
     font-size: 22px;
     font-weight: bold;
     color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Playfair Display", serif;
 }
 .article_contact p {
     font-size: 15px;
     color: #ffffff;
     text-align: left;
+    font-family: "Jost", sans-serif;
+}
+.fede { 
+    font-family: "Jost", sans-serif;
 }
 
 @media (min-width: 1200px) {
