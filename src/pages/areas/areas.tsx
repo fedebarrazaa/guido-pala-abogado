@@ -20,6 +20,8 @@ export function DesingAreas(){
             </p>
 
           </section>
+
+           <section className={style.section_item}> 
           {areasPractica.map((area) => (
     <div key={area.id} className={style.card_area}>
       <div className={style.card_icon_wrapper}>
@@ -37,8 +39,6 @@ export function DesingAreas(){
       </ul>
     </div>
   ))}
-          <section> 
-
           </section>
         </>
     )
