@@ -1,0 +1,27 @@
+.section_areas {
+    background-color: #F5F1EC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;  text-align: center;
+}
+
+.section_areas_h3 {
+    font-family: "Jost", sans-serif;
+    color: #D2B48C;
+    font-weight: 700;
+  
+}
+
+.section_areas_h1 {
+    font-family: "Playfair Display", serif;
+    color: #111111;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section_areas_p {
+    font-family: "Jost", sans-serif;
+}
