@@ -9,6 +9,7 @@ import { MdOutlinePeopleAlt } from "react-icons/md";
 import { TbCash } from "react-icons/tb";
 import { FiMessageCircle } from "react-icons/fi";
 import { Link } from "react-router-dom"
+import { IoShieldOutline } from "react-icons/io5";
 
 
 export function DesingHome() {
@@ -31,9 +32,10 @@ export function DesingHome() {
     ]
 
     const data = [
-        {id:1, icon: <MdOutlinePeopleAlt fontSize='40px' color="#D2B48C"/>, text:'Atención personalizada'},
-        {id:2, icon: <FiMessageCircle fontSize='40px' color="#D2B48C"/>, text:'Seguimiento del caso'},
-        {id:2, icon: <TbCash fontSize='40px' color="#D2B48C"/>, text:'Honorarios claros'}
+        {id:1, icon: <MdOutlinePeopleAlt fontSize='60px' color="#D2B48C"/>, text:'Atención personalizada'},
+        {id:2, icon: <FiMessageCircle fontSize='60px' color="#D2B48C"/>, text:'Seguimiento del caso'},
+        {id:3, icon: <TbCash fontSize='60px' color="#D2B48C"/>, text:'Honorarios claros'},
+        {id:4, icon: <IoShieldOutline fontSize='60px' color="#D2B48C"/>, text: 'Compromiso y dedicacion'}
     ]
 
     const testimonials = [ 
@@ -83,7 +85,7 @@ export function DesingHome() {
               </article>
             </div>
 {/*AÑOS, MATRICULA*/} 
-        <section>
+        <section className={style.section_hover_card}>
             <div className="max-w-5xl mx-auto px-8">
              <HoverEffect items={projects} />
              </div>
@@ -133,7 +135,7 @@ export function DesingHome() {
             <h1>¿Necesitas asesoramiento personal?</h1>
             <p>Estoy para ayudarte. Consulta tu caso sin compromiso</p>
           </article>
-          <button className="w-54 px-4 py-2 backdrop-blur-sm border bg-[#C8A977]/10 border-[#C8A977]/20 text-white  text-center rounded-full relative mt-4">
+          <button className="inline-flex items-center gap-2 mt-10 rounded-full bg-[#D2B48C] px-8 py-4 text-white font-semibold transition hover:bg-[#C19A6B]">
           <span className={style.fede}>
             <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} 
             target="_blank" 

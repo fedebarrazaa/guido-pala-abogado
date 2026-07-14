@@ -5,12 +5,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-top: 1px solid #D2B48C;
 }
 @media (min-width: 1200px) {
     .footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: start;
         
     }
@@ -22,8 +23,10 @@
 
 .titulo {
     font-family: "Playfair Display", serif;
-    font-weight: bolder;
-    font-size: 25px;
+    font-size: 1.5rem;      
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
     color: rgb(255, 255, 255);
 }
 .texto {
@@ -50,8 +53,9 @@
     .article_footer {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         gap: 40px;
-        width: 500px;
+        width: 800px;
     }
 }
 

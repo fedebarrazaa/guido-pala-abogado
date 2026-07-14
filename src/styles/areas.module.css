@@ -52,10 +52,10 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* todo alineado a la izquierda, como la referencia */
+    align-items: flex-start; 
     gap: 16px;
     width: 370px;
-    min-height: 500px; /* 👈 en vez de height fijo */
+    min-height: 500px; 
 }
 
 @media (min-width: 1200px) {
@@ -67,7 +67,7 @@ body {
 
 .card_titulo {
     font-family: "Playfair Display", serif;
-    font-size: 1.5rem;      /* 38px aprox */
+    font-size: 1.5rem;      
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.02em;
@@ -75,9 +75,9 @@ body {
     text-align: left;
     width: 100%;
     padding-bottom: 8px;
-    border-bottom: 2px solid #C8A977; /* la líneita corta debajo del título */
+    border-bottom: 2px solid #C8A977; 
     display: inline-block;
-    width: fit-content; /* para que el borde no ocupe todo el ancho de la card */
+    width: fit-content; 
 }
 
 .card_icon_wrapper {
@@ -87,9 +87,9 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #F0E6D6; /* beige clarito, ajustá según tu paleta */
+    background-color: #F0E6D6; 
     margin-bottom: 10px;
-    align-self: flex-start; /* para que quede pegado a la izquierda como en la referencia */
+    align-self: flex-start; 
 }
 
 .card_descripcion {
@@ -100,13 +100,13 @@ body {
 .card_lista {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* 👈 sin esto, los checks quedan pegados */
+    gap: 8px; 
 }
 .card_item {
     display: flex;
-    align-items: center; /* 👈 centra el ícono con el texto verticalmente */
+    align-items: center; 
     width: 100%;
-    gap: 10px; /* 👈 bajé de 20 a 10, se ve muy separado en tu captura */
+    gap: 10px; 
     font-family: "Jost", sans-serif;
     color: #1A1A1A;
     font-size: 14px;
@@ -120,7 +120,7 @@ body {
     flex-direction: column;
     border: 1px solid #d8b68d;
     border-radius: 0.5em;
-    margin: 20px 40px; /* 👈 antes tenías "margin: 2px" — subí el horizontal */
+    margin: 20px 40px; 
     padding: 24px 32px;
     max-width: 1180px;
     margin: 20px auto;
@@ -139,13 +139,13 @@ body {
     justify-content: center;
     width: 50px;
     height: 50px;
-    min-width: 50px; /* evita que se achique en flex */
+    min-width: 50px;
     border-radius: 50%;
     background-color: #F0E6D6;
 }
 .section_wpp_h1 {
     font-family: "Playfair Display", serif;
-    font-size: 2rem;      /* 38px aprox */
+    font-size: 2rem;     
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.02em;
