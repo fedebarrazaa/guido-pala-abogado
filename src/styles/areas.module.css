@@ -1,3 +1,6 @@
+body {
+    background-color:  #F5F1EC;
+}
 .section_areas {
     background-color: #F5F1EC;
     display: flex;
@@ -17,42 +20,45 @@
 
 .section_areas_h1 {
     font-family: "Playfair Display", serif;
-    color: #111111;
-    font-size: 30px;
+    font-size: 2rem;      /* 38px aprox */
     font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
 }
 
 .section_areas_p {
     font-family: "Jost", sans-serif;
 }
 
-
 /*------------------*/
 .section_item {
-    border: 1px solid red;
     background-color: #F5F1EC;
+    min-height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+   padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.card_area{
-    background-color: rebeccapurple;
+.card_area {
+    background-color: #fdf9f3;
+    border: 1px solid #d2b48c69;
+    border-radius: 0.5em;
     margin: 2px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* todo alineado a la izquierda, como la referencia */
+    gap: 16px;
     width: 370px;
-    height: 400px;
+    min-height: 500px; /* 👈 en vez de height fijo */
 }
 
 @media (min-width: 1200px) {
-    .card_area {
-        background-color: red;
-        
-    }
     .section_item {
         display: flex;
         flex-direction: row;
@@ -61,7 +67,92 @@
 
 .card_titulo {
     font-family: "Playfair Display", serif;
-    color: #111111;
-    font-size: 30px;
+    font-size: 1.5rem;      /* 38px aprox */
     font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #C8A977; /* la líneita corta debajo del título */
+    display: inline-block;
+    width: fit-content; /* para que el borde no ocupe todo el ancho de la card */
+}
+
+.card_icon_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F0E6D6; /* beige clarito, ajustá según tu paleta */
+    margin-bottom: 10px;
+    align-self: flex-start; /* para que quede pegado a la izquierda como en la referencia */
+}
+
+.card_descripcion {
+    font-family: "Jost", sans-serif;
+    color: #1A1A1A;
+}
+
+.card_lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* 👈 sin esto, los checks quedan pegados */
+}
+.card_item {
+    display: flex;
+    align-items: center; /* 👈 centra el ícono con el texto verticalmente */
+    width: 100%;
+    gap: 10px; /* 👈 bajé de 20 a 10, se ve muy separado en tu captura */
+    font-family: "Jost", sans-serif;
+    color: #1A1A1A;
+    font-size: 14px;
+}
+
+.section_wpp {
+    background-color: #DCCBB6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #d8b68d;
+    border-radius: 0.5em;
+    margin: 20px 40px; /* 👈 antes tenías "margin: 2px" — subí el horizontal */
+    padding: 24px 32px;
+    max-width: 1180px;
+    margin: 20px auto;
+}
+
+@media (min-width: 1200px) {
+    .section_wpp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.wpp_icon_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    min-width: 50px; /* evita que se achique en flex */
+    border-radius: 50%;
+    background-color: #F0E6D6;
+}
+.section_wpp_h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;      /* 38px aprox */
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+}
+
+.section_wpp_p {
+   font-family: "Jost", sans-serif;
+   color: #1A1A1A;
 }

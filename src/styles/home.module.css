@@ -37,10 +37,13 @@
 }
 .section_h3 {
     font-family: "Playfair Display", serif;
-    margin-top: 5px;
+    font-size: 2rem;      /* 38px aprox */
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    margin-top: 8px;
     text-align: left;
-    font-weight: 600;
-    font-size: 20px;
 }
 .section_p_dos { 
     text-align: left;
