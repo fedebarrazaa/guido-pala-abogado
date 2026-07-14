@@ -21,7 +21,7 @@ export function DesingContacto(){
         <ul className={style.section_ul}>
           {textos.map((texto)=>(
             <li key={texto.id} className={style.section_li}>
-              <div>
+              <div className={style.section_li_uno}>
                  {texto.titulo}
               </div>
              
@@ -34,7 +34,9 @@ export function DesingContacto(){
           
         </ul>
         </article>
-        <SignupFormDemo />
+        <div className={style.section_component}> 
+          <SignupFormDemo />
+        </div>
         </section>
 
         

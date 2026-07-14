@@ -126,13 +126,6 @@ body {
     margin: 20px auto;
 }
 
-@media (min-width: 1200px) {
-    .section_wpp {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
 .wpp_icon_circle {
     display: flex;
     align-items: center;

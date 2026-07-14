@@ -78,8 +78,7 @@ export function DesingHome() {
               </article>
               <article className={style.article_dos}> 
                 <p className={style.section_p_dos}> 
-                Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
-                Bajo la dirección del Dr. Leopoldo Murúa, abogado especialista en derecho penal, contando con un equipo interdisciplinario de profesionales comprometidos con la defensa penal activa, estratégica y personalizada.
+                Brindo asesoramiento jurídico en derecho penal con un enfoque estratégico, personalizado y orientado a resultados. Entiendo que cada situación presenta desafíos únicos, por eso desarrollo una estrategia adaptada a las necesidades de cada cliente. Mi compromiso es brindar un acompañamiento cercano, transparente y profesional, ofreciendo respuestas claras y una defensa sólida en cada etapa del proceso.
             </p>
             <Link to="/sobre-mi" className={style.link}>Mas sobre mi  </Link>
               </article>
@@ -99,7 +98,6 @@ export function DesingHome() {
           <article className={style.article_section_areas_dos}> 
             <TestCarousel />
           </article>
-             
         </section>
 {/*PORQUE ELEGIRME*/}
 <section className={style.section_elegir}>
@@ -123,12 +121,15 @@ export function DesingHome() {
     <article className={style.testimonios_izq}>
         <p className={style.desing_testimonios_p}>TESTIMONIOS</p>
     </article>
+
     <article className={style.testimonios_der}>
-        <div className="w-full h-[25rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+<div className="w-full max-w-6xl mx-auto h-[12rem] rounded-md flex flex-col antialiased items-center justify-start relative overflow-hidden">
             <InfiniteMovingCards items={testimonials} direction="right" speed="slow"/> 
         </div>
     </article>
+
 </section>
+
         {/*NECESITAS*/}
         <section className={style.section_contact}> 
           <article className={style.article_contact}>

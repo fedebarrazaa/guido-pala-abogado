@@ -17,12 +17,11 @@ export default function TestCarousel() {
   <div className="h-80 rounded-xl flex flex-col items-center justify-center px-10 text-center">
 
     <h3 className="text-3xl font-semibold text-[#D2B48C] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
-      Derecho Civil
+      Penal
     </h3>
 
     <p className="max-w-md text-black leading-relaxed text-center" style={{ fontFamily: "Jost, sans-serif" }}>
-      Asesoramiento integral en contratos, sucesiones, daños y perjuicios,
-      buscando siempre soluciones eficientes y personalizadas para cada cliente.
+      Defensa y asesoramiento integral en todas las etapas del proceso penal, con una estrategia jurídica personalizada y un compromiso permanente con la protección de tus derechos.
     </p>
 
   </div>
@@ -32,11 +31,11 @@ export default function TestCarousel() {
   <div className="h-80 rounded-xl flex flex-col items-center justify-center px-10 text-center">
 
     <h3 className="text-3xl font-semibold text-[#D2B48C] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
-      Jurisdicción
+      Penal Económico
     </h3>
 
     <p className="max-w-md text-black leading-relaxed text-center" style={{ fontFamily: "Jost, sans-serif" }}>
-     Intervención en C.A.B.A., Provincia de Buenos Aires, Santa Cruz y Rio Negro (matricula provincial). Delitos federales en todo el país.
+     Asistencia legal especializada en delitos económicos, financieros y empresariales, brindando soluciones estratégicas para personas, profesionales y empresas.
     </p>
 
   </div>
@@ -46,11 +45,11 @@ export default function TestCarousel() {
   <div className="h-80 rounded-xl flex flex-col items-center justify-center px-10 text-center">
 
     <h3 className="text-3xl font-semibold text-[#D2B48C] mb-4" style={{ fontFamily: "Playfair Display, serif" }}>
-     Representación
+     Compliance
     </h3>
 
     <p className="max-w-md text-black leading-relaxed text-center" style={{ fontFamily: "Jost, sans-serif" }}>
-      Intervención en todas las etapas del proceso penal: investigación e instrucción, juicio oral, etapas recursivas, tribunales superiores provinciales y Corte Suprema de Justicia.
+      Implementación de programas de cumplimiento normativo para prevenir riesgos legales, fortalecer la transparencia y proteger la actividad de la organización.
     </p>
 
   </div>

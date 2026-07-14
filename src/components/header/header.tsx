@@ -1,9 +1,8 @@
 "use client";
-import { Navbar, NavBody, NavItems, MobileNav, NavbarLogo, NavbarButton,  MobileNavHeader, MobileNavToggle, MobileNavMenu} 
-from "@/components/ui/resizable-navbar";
+import { Navbar, NavBody, NavItems, MobileNav, NavbarLogo, NavbarButton,  MobileNavHeader, MobileNavToggle, MobileNavMenu} from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { FaInstagram, FaLinkedin  } from "react-icons/fa";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 
 
@@ -53,7 +52,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         <MobileNav>
-          <MobileNavHeader className="bg-transparent/100 backdrop-blur-md rounded-full shadow-lg">
+          <MobileNavHeader className="bg-transparent/100  rounded-full ">
             <NavbarLogo />
             <MobileNavToggle
               isOpen={isMobileMenuOpen}

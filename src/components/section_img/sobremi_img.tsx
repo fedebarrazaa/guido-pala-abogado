@@ -69,7 +69,7 @@ export function Img() {
     "
     style={{ fontFamily: "Jost, sans-serif" }}
   >
-    Soy Guido Palacin, abogado comprometido con brindar un asesoramiento
+    Soy Guido Adrian Palacin, abogado comprometido con brindar un asesoramiento
     jurídico claro, estratégico y personalizado para cada cliente. Entiendo
     que detrás de cada consulta existe una persona, una familia o una empresa
     que necesita respuestas, por eso trabajo con cercanía, transparencia y

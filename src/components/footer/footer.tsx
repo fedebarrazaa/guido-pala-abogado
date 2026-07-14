@@ -3,7 +3,7 @@ import style from '../../styles/footer.module.css'
 
 export function FooterDesing(){
         const paginas = [
-          {id:1, nombre: 'Inicio'},
+          {id:1, nombre: 'Inicio', link:'/'},
           {id:2, nombre: 'Sobre mi'},
           {id:3, nombre: 'Areas'},
           {id:4, nombre: 'Contacto'},
@@ -11,15 +11,14 @@ export function FooterDesing(){
     
         const redes = [
           {id:1, nombre: 'hola@guidopalcin.com'},
-          {id:2, nombre: '+54 0000 00000'},
-          {id:3, nombre: 'Buenos Aires, Argentina'},
+          {id:2, nombre: '+54 9 11 3316-9842'},
+          {id:3, nombre: 'CABA, Prov. Buenos Aires'},
         ]
 
         const areas = [
-          {id:1, nombre: 'Derecho Penal'},
-          {id:2, nombre: 'Derecho Laboral'},
-          {id:1, nombre: 'Derecho Comercial'},
-          {id:2, nombre: 'Derecho Familia'},
+          {id:1, nombre: 'Penal'},
+          {id:2, nombre: 'Penal Economico'},
+          {id:3, nombre: 'Compliance'},
         ]
     return (
         <>

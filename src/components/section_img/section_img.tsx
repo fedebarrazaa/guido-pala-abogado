@@ -52,7 +52,7 @@ export function Img() {
               "
               style={{ fontFamily: "Playfair Display, serif" }}
             >
-              Guido Palacin
+              Guido Adrian Palacin
             </motion.h1>
 
             <motion.p

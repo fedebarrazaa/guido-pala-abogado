@@ -268,14 +268,16 @@
 
 /*TESTIMONIOS*/
 .desing_testimonios {
-    display: flex;
+   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 20px;
+    margin-top: 20px;
     padding: 5px;
     width: 100%;
+    min-height: 400px; 
     background-color: #F5F1EC;
     font-family: "Jost", sans-serif;
 }
@@ -284,14 +286,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    margin-top: 20px;
-    
-    width: 200px; 
+    width: 200px;
     height: 35px;
     font-size: 15px;
     font-weight: bolder;
+    font-family: "Jost", sans-serif;
     color: #222730;
+    
 }
 
 .testimonios_der {
@@ -301,30 +302,28 @@
 
 @media (min-width: 1200px) {
     .desing_testimonios {
+        display: flex;
         flex-direction: row;
-        justify-content: space-evenly; 
-        align-items: flex-start; 
+        justify-content:space-evenly;
     }
 
     .testimonios_izq {
-        width: 20%; 
         display: flex;
         flex-direction: column;
-        align-items: flex-start; 
+        gap: 30px;
     }
 
     .testimonios_der {
-        width: 50%; 
+        width: 75%;                
         max-width: none; 
         display: flex;
         flex-direction: column;
-        align-items: stretch; 
+        align-items: stretch;
     }
 }
 
 /*contact*/
 .section_contact {
-    background-image: url("https://images.unsplash.com/photo-1768839722927-df0ef3188f6d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     width: 100%;
     height: 300px;
     display: flex;
@@ -334,9 +333,12 @@
     padding: 5px;
 
     /* REGLAS DE BACKGROUND CORRECTAS */
-    background-size: cover;       /* Estira y recorta la imagen para llenar todo el div */
-    background-position: top;  /* Centra la imagen para que no se corte mal */
-    background-repeat: no-repeat; /* Evita que la imagen se duplique */
+   background-image: 
+        linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.4)),
+        url("https://cdn.pixabay.com/photo/2022/10/20/01/51/gavel-7533897_1280.jpg");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .article_contact {

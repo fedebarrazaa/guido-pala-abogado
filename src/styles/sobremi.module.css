@@ -24,7 +24,7 @@
     gap: 20px;
     padding: 50px;
     width: 100%;
-    background-color: #F5F1EC;
+    background-color: #eee6db;
 }
 @media (min-width: 1200px) {
     .section_cita{
@@ -38,8 +38,9 @@
 
 .section_cita_h3 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 800;
     font-family: "Playfair Display", serif;
+    font-style: italic; /* 👈 esto lo inclina */
 }
 @media (min-width: 1200px) {
     .section_cita_h3 {
@@ -49,7 +50,13 @@
     font-weight: bold;
 }
 }
-
+.section_cita_comillas {
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+    color: #D2B48C;
+    line-height: 0.5;
+    display: block;
+}
 .section_cita_p {
     color: #D2B48C;
     font-weight: bolder;
@@ -69,5 +76,9 @@
       align-items: center;
       gap: 20px;
       width: 80%;
+    }
+    .section_cita_p{
+        font-size: 25px;
+        font-weight:500 ;
     }
 }

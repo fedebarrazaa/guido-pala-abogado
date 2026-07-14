@@ -63,7 +63,7 @@
 .footer_paginas p {
     font-weight: bold;
     margin-bottom: 15px;
-    color: #D2B48C;
+    color: rgb(255, 255, 255);
     font-family: "Jost", sans-serif;
 }
 
@@ -82,7 +82,7 @@
 .footer_sociales p {
     font-weight: bold;
     margin-bottom: 15px;
-    color: #D2B48C;
+    color: rgb(255, 255, 255);
     font-family: "Jost", sans-serif;
 }
 
@@ -101,7 +101,7 @@
 .footer_areas p {
     font-weight: bold;
     margin-bottom: 15px;
-    color: #D2B48C;
+    color: rgb(255, 255, 255);
     font-family: "Jost", sans-serif;
 }
 

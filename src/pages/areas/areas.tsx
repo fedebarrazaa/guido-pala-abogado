@@ -51,8 +51,8 @@ export function DesingAreas(){
              <h1 className={style.section_wpp_h1}>¿Tenés una consulta sobre tu caso?</h1>
             <p className={style.section_wpp_p}>Estoy para ayudarte. Hablemos y encontremos la mejor solucion</p>
            </div>
-            <button className="w-54 px-4 py-2 backdrop-blur-sm border bg-[#F0E6D6] text-[#d8b68d]  text-center rounded-full relative mt-4">
-             <span className={style.fede}>
+            <button className="inline-flex items-center gap-2 mt-10 rounded-full bg-[#D2B48C] px-8 py-4 text-white font-semibold transition hover:bg-[#C19A6B]">
+          <span className={style.fede}>
             <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} 
             target="_blank" 
             rel="noopener noreferrer"
@@ -62,7 +62,7 @@ export function DesingAreas(){
             <FaWhatsapp fontSize='20px'/>
             </a>
             </span>
-            </button>
+        </button>
           </section>
         </>
     )
