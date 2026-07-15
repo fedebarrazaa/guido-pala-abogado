@@ -135,7 +135,10 @@
         justify-content:space-evenly;
     }
 }
-
+.article_section_areas_dos {
+    width: 100%;
+    overflow: hidden;   /* 👈 recorta cualquier desborde del carousel */
+}
 .section_p_article {
     display: flex;
     align-items: center;
