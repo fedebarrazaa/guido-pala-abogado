@@ -45,13 +45,13 @@ export function DesingAreas(){
 
           <section className={style.section_wpp}>
             <div className={style.wpp_icon_circle}>
-             <HiOutlineChatBubbleLeftRight fontSize="24px" color="#C8A977" />
+             <HiOutlineChatBubbleLeftRight fontSize="30px" color="#C8A977" />
              </div>
-           <div>
+             <div className={style.fededos}>
              <h1 className={style.section_wpp_h1}>¿Tenés una consulta sobre tu caso?</h1>
             <p className={style.section_wpp_p}>Estoy para ayudarte. Hablemos y encontremos la mejor solucion</p>
            </div>
-            <button className="inline-flex items-center gap-2 mt-10 rounded-full bg-[#D2B48C] px-8 py-4 text-white font-semibold transition hover:bg-[#C19A6B]">
+            <button className="inline-flex items-center gap-2 rounded-full bg-[#D2B48C] px-8 py-4 text-white font-semibold transition hover:bg-[#C19A6B]">
           <span className={style.fede}>
             <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`} 
             target="_blank" 

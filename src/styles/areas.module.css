@@ -112,30 +112,39 @@ body {
     font-size: 14px;
 }
 
+/*----------------*/
 .section_wpp {
     background-color: #F0E6D6;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     border: 1px solid #d8b68d;
     border-radius: 0.5em;
     margin: 20px 40px; 
-    padding: 24px 32px;
+    padding: 24px ;
     max-width: 1180px;
     margin: 20px auto;
+}
+
+@media (min-width: 1200px) {
+    .section_wpp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 .wpp_icon_circle {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 50px;
     height: 50px;
-    min-width: 50px;
-    border-radius: 50%;
-    background-color: #F0E6D6;
 }
+
+
 .section_wpp_h1 {
     font-family: "Playfair Display", serif;
     font-size: 2rem;     

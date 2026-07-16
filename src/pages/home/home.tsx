@@ -35,17 +35,13 @@ export function DesingHome() {
     ]
 
     const data = [
-        {id:1, icon: <MdOutlinePeopleAlt fontSize='60px' color="#D2B48C"/>, text:'Atención personalizada'},
-        {id:2, icon: <FiMessageCircle fontSize='60px' color="#D2B48C"/>, text:'Seguimiento del caso'},
-        {id:3, icon: <TbCash fontSize='60px' color="#D2B48C"/>, text:'Honorarios claros'},
-        {id:4, icon: <IoShieldOutline fontSize='60px' color="#D2B48C"/>, text: 'Compromiso y dedicacion'}
+        {id:1, icon: <MdOutlinePeopleAlt fontSize='60px' color="#D2B48C"/>, text:'Atención personalizada', parrafo: 'Cada estrategia se adapta a tu caso y objetivos.'},
+        {id:2, icon: <FiMessageCircle fontSize='60px' color="#D2B48C"/>, text:'Seguimiento del caso', parrafo: 'Comunicacion constante y transparente en cada etapa del proceso'},
+        {id:3, icon: <TbCash fontSize='60px' color="#D2B48C"/>, text:'Honorarios claros', parrafo: 'Propuesta de honorarios transparentes y sin costos ocultos.'},
+        {id:4, icon: <IoShieldOutline fontSize='60px' color="#D2B48C"/>, text: 'Compromiso y dedicacion', parrafo: 'Defensa con compromiso, etica y busqueda de los mejores resultados.'}
     ]
 
     const testimonials = [ 
-        {
-            quote:"Guido me acompañó durante todo el proceso con mucha claridad y profesionalismo. Siempre respondió mis dudas y logró resolver mi caso de la mejor manera. Lo recomiendo totalmente.",
-            name: "María Fernández",
-        },
         {
             quote:"Destaco su compromiso y rapidez para encontrar soluciones. Me brindó un asesoramiento preciso y estuvo presente en cada etapa del proceso. Excelente profesional.",
             name: "Javier Gómez",
@@ -112,7 +108,8 @@ export function DesingHome() {
             {data.map((usuario, index) => (
                 <li key={index}>
                     {usuario.icon}
-                    <span>{usuario.text}</span>
+                    <span className={style.texto_ul}>{usuario.text}</span>
+                    <span className={style.parrafo_ul}>{usuario.parrafo}</span>
                 </li>
             ))}
         </ul>
