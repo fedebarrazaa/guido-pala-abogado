@@ -10,6 +10,8 @@ import { TbCash } from "react-icons/tb";
 import { FiMessageCircle } from "react-icons/fi";
 import { Link } from "react-router-dom"
 import { IoShieldOutline } from "react-icons/io5";
+import { GrLinkNext } from "react-icons/gr";
+
 
 
 export function DesingHome() {
@@ -28,7 +30,8 @@ export function DesingHome() {
         { 
             title: "200+",
             description: "Casos penales patrocinados.",
-        }
+        },
+
     ]
 
     const data = [
@@ -80,20 +83,20 @@ export function DesingHome() {
                 <p className={style.section_p_dos}> 
                 Brindo asesoramiento jurídico en derecho penal con un enfoque estratégico, personalizado y orientado a resultados. Entiendo que cada situación presenta desafíos únicos, por eso desarrollo una estrategia adaptada a las necesidades de cada cliente. Mi compromiso es brindar un acompañamiento cercano, transparente y profesional, ofreciendo respuestas claras y una defensa sólida en cada etapa del proceso.
             </p>
-            <Link to="/sobre-mi" className={style.link}>Mas sobre mi  </Link>
+            <Link to="/sobre-mi" className={style.link}>Mas sobre mi <GrLinkNext /> </Link>
               </article>
             </div>
 {/*AÑOS, MATRICULA*/} 
         <section className={style.section_hover_card}>
             <div className="max-w-5xl mx-auto px-8">
              <HoverEffect items={projects} />
-             </div>
+            </div>
         </section>
 {/*QUE TRABAJA*/}
         <section className={style.section_areas_desing}> 
           <article className={style.article_section_areas}> 
             <p className={style.section_p_article}>AREAS DE PRACTICA</p>
-            <h3 className={style.section_h3_article}>Experiencia de confianza</h3>
+            <h3 className={style.section_h3_article}>Experiencia de confianza.</h3>
           </article>
           <article className={style.article_section_areas_dos}> 
             <TestCarousel />

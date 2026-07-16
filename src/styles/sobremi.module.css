@@ -40,7 +40,7 @@
     font-size: 25px;
     font-weight: 800;
     font-family: "Playfair Display", serif;
-    font-style: italic; /* 👈 esto lo inclina */
+    font-style: italic; 
 }
 @media (min-width: 1200px) {
     .section_cita_h3 {
@@ -59,8 +59,8 @@
 }
 .section_cita_p {
     color: #D2B48C;
-    font-weight: bolder;
-    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
 }
 .section_cita div {
     padding: 2px;
