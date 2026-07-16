@@ -38,9 +38,9 @@ export function DesingSobreMi(){
 
       <section className={style.section_cita}> 
         <div>
-             <span className={style.section_cita_comillas}>"</span>
-            <h3 className={style.section_cita_h3}> "La confianza se construye con resultados y una comunicación transparente."</h3>
-        <p className={style.section_cita_p}>- Guido Palacin</p>
+          <span className={style.section_cita_comillas}>"</span>
+          <h3 className={style.section_cita_h3}> "La confianza se construye con resultados y una comunicación transparente."</h3>
+          <p className={style.section_cita_p}>- Guido Palacin</p>
         </div>
       </section>
         </>

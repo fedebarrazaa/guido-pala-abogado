@@ -2,7 +2,6 @@
 import { Navbar, NavBody, NavItems, MobileNav, NavbarLogo, NavbarButton,  MobileNavHeader, MobileNavToggle, MobileNavMenu} from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { FaInstagram, FaLinkedin  } from "react-icons/fa";
-//import { Link } from "react-router-dom";
 
 
 

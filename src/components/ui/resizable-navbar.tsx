@@ -10,6 +10,7 @@ import {
 
 import React, { useRef, useState } from "react";
 
+import imgLogo from '../../assets/logo_guido.png'
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -240,10 +241,10 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <img
-        src="https://assets.aceternity.com/logo-dark.png"
+        src={imgLogo}
         alt="logo"
-        width={30}
-        height={30}
+        width={35} //antes 30
+        height={35} //antes 30
       />
       <span className="font-medium text-white dark:text-white">Guido Adrian Palacin</span>
     </a>

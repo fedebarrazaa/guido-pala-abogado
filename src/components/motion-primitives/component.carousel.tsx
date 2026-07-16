@@ -1,5 +1,3 @@
-// src/components/TestCarousel.tsx
-
 import {
   Carousel,
   CarouselContent,
