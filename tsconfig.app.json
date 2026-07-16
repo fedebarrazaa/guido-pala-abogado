@@ -18,13 +18,15 @@
 
     "baseUrl": ".",
     "paths": {
-  "@/*": ["./src/*"]
+  "@/*": ["src/*"]
 },
+ "ignoreDeprecations": "6.0",
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src"],
+ 
 }
