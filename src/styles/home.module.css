@@ -145,6 +145,7 @@
 }
 .article_section_areas_dos {
     width: 100%;
+    overflow: hidden;
 }
 
 .article_section_areas {
