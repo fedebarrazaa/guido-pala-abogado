@@ -1,12 +1,12 @@
 import style from '../../styles/footer.module.css'
-
+import { Link } from "react-router-dom"
 
 export function FooterDesing(){
         const paginas = [
-          {id:1, nombre: 'Inicio', link:'/'},
-          {id:2, nombre: 'Sobre mi'},
-          {id:3, nombre: 'Areas'},
-          {id:4, nombre: 'Contacto'},
+          {id:1, nombre: 'Inicio', to:'/'},
+          {id:2, nombre: 'Sobre mi', to:'/sobre-mi'},
+          {id:3, nombre: 'Areas', to:'/areas'},
+          {id:4, nombre: 'Contacto', to: '/contacto'},
         ]
     
         const redes = [
@@ -34,7 +34,9 @@ export function FooterDesing(){
             <ul> 
               {paginas.map(usuario => (
                 <li key={usuario.id}> 
-                 {usuario.nombre}
+                 <Link to={usuario.to}>
+                  {usuario.nombre}
+                </Link>
               </li>
               ))}
               

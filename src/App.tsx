@@ -1,6 +1,6 @@
 /*
 RECIBE: 
-ROUTER YPAGES
+ROUTER Y LAYOUT
 */
 import { Layout } from './pages/layout/layout'
 import { DesingHome } from './pages/home/home'
