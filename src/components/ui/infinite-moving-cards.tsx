@@ -101,13 +101,13 @@ export const InfiniteMovingCards = ({
               py-6
             "
           >
-            <blockquote className="m-0">
-              <span className="relative z-20 text-sm leading-7 text-neutral-700">
+            <blockquote>
+              <span className="relative z-20 text-sm leading-7 text-neutral-700 dark:text-neutral-200">
                 "{item.quote}"
               </span>
 
               <div className="relative z-20 mt-6">
-                <span className="text-sm font-bold text-[#1A1A1A]">
+                <span className="text-sm font-semibold text-neutral-900 dark:text-white">
                   {item.name}
                 </span>
               </div>
