@@ -7,6 +7,7 @@ Sitio web institucional para el estudio jurídico del Dr. Guido Palacín, especi
 ## Screenshot
 
 <img width="1904" height="910" alt="image" src="https://github.com/user-attachments/assets/056eaa8f-47a0-40e0-93c3-0413b310e7b5" />
+<img width="1903" height="907" alt="image" src="https://github.com/user-attachments/assets/70037f9e-b62e-48ef-982b-73eb914c9049" />
 
 
 ## Stack
