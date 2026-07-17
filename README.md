@@ -1,77 +1,79 @@
-# React + TypeScript + Vite
+# Guido Palacín — Abogado Penalista
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web institucional para el estudio jurídico del Dr. Guido Palacín, especializado en defensa penal. Desarrollado como landing page profesional con foco en generar confianza y facilitar el contacto directo por WhatsApp.
 
-Currently, two official plugins are available:
+🔗 **Demo en vivo:** https://guido-palacin.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshot
 
-## React Compiler
+![Vista previa del sitio](./public/preview.png)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Stack
 
-Note: This will impact Vite dev & build performances.
+- **React** + **TypeScript**
+- **Vite** como bundler
+- **Tailwind CSS** + **CSS Modules**
+- **React Router** para la navegación entre páginas
+- **Aceternity UI** / **motion-primitives** para componentes visuales (carousel, hover cards, navbar)
+- **Vercel** para el deploy
 
-## Expanding the ESLint configuration
+## Estructura del sitio
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Inicio** — Hero con imagen, presentación, estadísticas (años de experiencia, matrícula, casos resueltos), áreas de práctica destacadas, por qué elegirme, testimonios y CTA de contacto.
+- **Sobre mí** — Historia profesional, trayectoria y jurisdicción de actuación.
+- **Áreas de práctica** — Detalle de las especialidades legales (derecho civil, jurisdiccional, representación, etc.), cada una con su lista de servicios incluidos.
+- **Contacto** — Formulario de contacto, información de confianza (respuesta rápida, confidencialidad, atención personalizada) y botón directo a WhatsApp.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Características
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Botón de WhatsApp flotante** con mensaje predefinido (`wa.me`), sin necesidad de API de pago.
+- **Header fijo y transparente** que se superpone a las imágenes de fondo en cada sección.
+- **Diseño responsive**, adaptado a mobile, tablet y desktop.
+- **Componentes reutilizables basados en datos** (`data/areas.tsx`, arrays de testimonios, estadísticas) para facilitar el mantenimiento y la escalabilidad del contenido.
+- **Paleta de colores cálida** (tonos beige, marrón y grafito) pensada para transmitir profesionalismo y confianza.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalación local
 
+```bash
+# Clonar el repositorio
+git clone https://github.com/fedebarrazaa/guido-pala-abogado.git
+cd guido-pala-abogado
+
+# Instalar dependencias
+npm install
+
+# Correr en modo desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+El proyecto va a estar disponible en `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Build de producción
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run build
 ```
+
+Los archivos optimizados se generan en la carpeta `dist/`.
+
+## Despliegue
+
+El proyecto está desplegado en **Vercel**, con un archivo `vercel.json` que asegura el correcto manejo de rutas para una Single Page Application (SPA):
+
+```json
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
+
+Esto evita errores 404 al navegar directamente a rutas internas como `/sobre-mi`, `/areas` o `/contacto`.
+
+## Autor
+
+Desarrollado por [Federico Barraza](https://fedebarraza-portfolio.vercel.app) — Desarrollador Frontend / Full Stack.
+
+---
+
+**© 2024 Guido Palacín. Todos los derechos reservados.**
